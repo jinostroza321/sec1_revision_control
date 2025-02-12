@@ -1,14 +1,14 @@
 ## Version 2
 
-#import ssl
-#import urllib.request
+import ssl
+import urllib.request
 
-#ctx = ssl.create_default_context()
-#ctx.check_hostname = False
-#ctx.verify_mode = ssl.CERT_NONE
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
-#contents = urllib.request.urlopen("https://ipapi.co/8.8.8.8/json", context=ctx).read()
-#print(contents)
+contents = urllib.request.urlopen("https://ipapi.co/8.8.8.8/json", context=ctx).read()
+print(contents)
 
 
 ## Version 4
@@ -29,16 +29,16 @@
 
 ## Version 6
 
-import ssl
-import urllib.request
+#import ssl
+#import urllib.request
 
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
+#ctx = ssl.create_default_context()
+#ctx.check_hostname = False
+#ctx.verify_mode = ssl.CERT_NONE
 
-ip = input("Enter IP to lookup: ")
+#ip = input("Enter IP to lookup: ")
 
-url = f"https://ipapi.co/{ip.strip()}/json/"
-contents = urllib.request.urlopen(url, context=ctx).read()
-print(contents)
+#url = f"https://ipapi.co/{ip.strip()}/json/"
+#contents = urllib.request.urlopen(url, context=ctx).read()
+#print(contents)
 
